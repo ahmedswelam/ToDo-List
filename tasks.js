@@ -72,7 +72,7 @@ const showElement=(task)=>{
 }
 const drawEmptyRow = (colSpan) => {
     const tr = createMyOwnElement(elementObjCreator("tr", datawrap, null, "alert alert-danger", []))
-    createMyOwnElement(elementObjCreator("td", tr, "no tasks yet", "text-center", [{ key: "colspan", val: colSpan }]))
+    createMyOwnElement(elementObjCreator("td", tr, "No Tasks Yet", "text-center", [{ key: "colspan", val: colSpan }]))
 }
 const drawAllTasks = (tasks) => {
     datawrap.textContent = ""
